@@ -12,7 +12,7 @@
     ];
   in
 {
-  asungy = homeManagerConfiguration {
+  asungx = homeManagerConfiguration {
     inherit pkgs;
     modules = [{ inherit imports; }];
   };

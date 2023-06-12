@@ -1,6 +1,6 @@
 { config, lib, pkgs, stdenv, ... } :
 let
-  username = "asungy";
+  username = "asungx";
   homeDirectory = "/home/${username}";
 
   defaultPkgs = with pkgs; [

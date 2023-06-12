@@ -23,7 +23,7 @@ in
     delta = deltaConfig;
     enable = true;
     extraConfig = gitConfig;
-    userEmail = "62207329+asungy@users.noreply.github.com";
-    userName = "asungy";
+    userEmail = "98825515+asungx@users.noreply.github.com";
+    userName = "asungx";
   };
 }

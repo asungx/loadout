@@ -1,5 +1,5 @@
 {
-  description = "asungy's Home Manager and NixOS configurations";
+  description = "asungx's Home Manager and NixOS configurations";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";

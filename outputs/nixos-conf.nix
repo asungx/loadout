@@ -10,12 +10,12 @@
     };
   in
 {
-  dell-g5 = nixosSystem {
+  thinkpad-x1 = nixosSystem {
     inherit pkgs system;
     # Not exactly sure what this does...be wary.
     specialArgs = { inherit inputs; };
     modules = [
-      ../system/machine/dell-g5
+      ../system/machine/thinkpad-x1
       ../system/configuration.nix
     ];
   };
