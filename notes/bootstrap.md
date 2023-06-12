@@ -21,7 +21,7 @@ Once inside the directory, there is a bash script called `x` that is used help
 apply changes to the system configuration. **DO NOT RUN THIS SCRIPT YET**.
 
 ### IMPORTANT
-> Future work will be done to optimise this process.
+> Work may be done in the future to optimise this process.
 
 Do the following before running the `x` script:
 - [ ] Copy the `hardware-configuration.nix` file to the appropriate directory
