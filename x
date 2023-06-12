@@ -15,11 +15,11 @@ rebuild_home() {
 }
 
 rebuild_system() {
-    sudo nixos-rebuild switch --flake .#dell-g5
+    sudo nixos-rebuild switch --flake .#thinkpad-x1
 }
 
 rebuild_vm() {
-    sudo nixos-rebuild build-vm --flake .#dell-g5
+    sudo nixos-rebuild build-vm --flake .#thinkpad-x1
 }
 
 fresh_install() {
