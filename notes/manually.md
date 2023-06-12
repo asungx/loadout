@@ -2,6 +2,13 @@
  
  Actions that currently require a manual set up for a desired experience.
 
+## Setup Neovim
+- Run the `y` script to set up Neovim:
+```bash
+./y copy
+./y rebuild
+```
+
 ## Plasma Desktop
 - [ ] Apperance:
   - Global theme: Breeze Dark
