@@ -10,7 +10,7 @@ activateHM() {
 }
 
 rebuild_home() {
-    nix build .#homeConfigurations.asungy.activationPackage
+    nix build .#homeConfigurations.asungx.activationPackage
     activateHM
 }
 
