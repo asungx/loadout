@@ -14,6 +14,7 @@ Boot the NixOS installer from the USB drive created above.
 ## Building Loadout
 Clone the `asungy/loadout` repo and navigate to the `loadout/` directory.
 ```bash
+nix-shell -p git
 git clone --depth=1 --branch=main https://github.com/asungy/loadout
 cd loadout/
 ```
@@ -59,6 +60,18 @@ Manager][home_manager_wiki] for the targeted user.
 
 ### Restart
 A computer restart may be necessary to observe desired changes.
+
+### (Optional) Reset loadout remote to use SSH
+- Create SSH key
+- Add to GitHub
+- Check remote addresses:
+```bash
+git remote -v
+```
+- Change to remote to SSH address
+```bash
+git remote set-url origin git@github.com:asungy/loadout.git
+```
 
 [etcher]: https://etcher.balena.io/
 [home_manager_wiki]: https://nixos.wiki/wiki/Home_Manager

@@ -10,7 +10,7 @@
 ```
 
 ## Plasma Desktop
-- [ ] Apperance:
+- [ ] Appearance:
   - Global theme: Breeze Dark
 - [ ] Workspace behavior:
   - Screen Edges: Turn off Windows dragged to left or right edge
@@ -27,9 +27,11 @@
 - [ ] Input Devies:
   - Keyboard > Turn on "NumLock on Plasma Startup"
 - Toolbar
-  - Remove workspaces
-  - Resize toolbar
   - Enable auto-hide
+  - Remove pinned applications
+  - Remove workspaces
+  - Resize toolbar to ~40
+  - Set opacity to translucent
 
 ## Browsers
 - [ ] Brave:
