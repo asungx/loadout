@@ -18,11 +18,10 @@ let
   ];
 
   dev = with pkgs; [
-    cargo
     llvmPackages_16.libcxxClang
     protobuf
     python312
-    rustc
+    rustup
   ];
 in
 {
