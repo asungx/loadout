@@ -21,6 +21,7 @@ let
     cargo
     python312
     rustc
+    llvmPackages_16.libcxxClang
   ];
 in
 {
