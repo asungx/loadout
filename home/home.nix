@@ -19,6 +19,7 @@ let
 
   dev = with pkgs; [
     llvmPackages_16.libcxxClang
+    nodejs_20
     protobuf
     python312
     rustup
