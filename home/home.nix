@@ -18,7 +18,7 @@ let
   ];
 
   dev = with pkgs; [
-    llvmPackages_16.libcxxClang
+    llvmPackages_16.clang-unwrapped
     nodejs_20
     protobuf
     python312
