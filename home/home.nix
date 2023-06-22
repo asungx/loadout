@@ -18,6 +18,7 @@ let
   ];
 
   dev = with pkgs; [
+    gcc13
     llvmPackages_16.clang-unwrapped
     nodejs_20
     protobuf
