@@ -1,5 +1,6 @@
 { pkgs, inputs, ... } :
-{
+  let udevRules = pkgs.callPackage ./udev/default.nix { inherit pkgs; };
+in {
   imports = [];
 
   # System packages.
@@ -57,6 +58,9 @@
     xkbVariant = "eng,";
   };
 
+  # Install custom udev configurations.
+  services.udev.packages = [ udevRules ];
+
   # Enable sound with pipewire.
   sound.enable = true;
   hardware.pulseaudio.enable = false;
@@ -78,7 +82,7 @@
   # User.
   users.users.asungx = {
     isNormalUser = true;
-    extraGroups = ["docker" "networkmanager" "wheel"];
+    extraGroups = ["docker" "networkmanager" "wheel" "plugdev"];
     shell = pkgs.bash;
     password = "";
   };
