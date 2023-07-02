@@ -79,10 +79,13 @@ in {
     })
   ];
 
+  # Add user to plugdev.
+  users.groups.plugdev.members = [ "asungx" ];
+
   # User.
   users.users.asungx = {
     isNormalUser = true;
-    extraGroups = ["docker" "networkmanager" "wheel" "plugdev"];
+    extraGroups = ["docker" "networkmanager" "wheel"];
     shell = pkgs.bash;
     password = "";
   };
