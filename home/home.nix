@@ -26,6 +26,8 @@ let
     protobuf
     python312
     rustup
+    typst
+    typst-lsp
   ];
 in
 {
