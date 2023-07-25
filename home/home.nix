@@ -20,6 +20,8 @@ let
   dev = with pkgs; [
     gcc13
     llvmPackages_16.clang-unwrapped
+    nodePackages_latest.typescript
+    nodePackages_latest.typescript-language-server
     nodejs_20
     protobuf
     python312
