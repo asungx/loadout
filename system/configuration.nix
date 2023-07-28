@@ -154,10 +154,10 @@ in {
       # trying to connect to a server hosted in a container through the host
       # machine.
       #
-      # rootless = {
-      #   enable = true;
-      #   setSocketVariable = true;
-      # };
+      rootless = {
+        enable = true;
+        setSocketVariable = true;
+      };
     };
   };
 
