@@ -27,6 +27,7 @@ let
   dev = with pkgs; [
     nodePackages_latest.typescript
     nodePackages_latest.typescript-language-server
+    protobuf
     rustup
     typst
     typst-lsp
