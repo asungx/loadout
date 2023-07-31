@@ -17,18 +17,23 @@ let
     xclip           # Clipboard/Terminal conduit
   ];
 
-  dev = with pkgs; [
+  required = with pkgs; [
     gcc13
     llvmPackages_16.clang-unwrapped
+    nodejs_20
+    python312
+  ];
+
+  dev = with pkgs; [
     nodePackages_latest.typescript
     nodePackages_latest.typescript-language-server
-    nodejs_20
-    protobuf
-    python312
     rustup
     typst
     typst-lsp
   ];
+
+  other = with pkgs; [];
+
 in
 {
   programs.home-manager.enable = true;
@@ -41,7 +46,7 @@ in
     inherit username;
     inherit homeDirectory;
 
-    packages = defaultPkgs ++ dev;
+    packages = defaultPkgs ++ required ++ dev ++ other;
 
     stateVersion = "23.05";
   };
